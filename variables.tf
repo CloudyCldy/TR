@@ -74,3 +74,10 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+variable "subscription_id" {
+    description = "string"
+    default = "id"
+    sensitive = true
+
+  
+}
