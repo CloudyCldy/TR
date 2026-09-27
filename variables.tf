@@ -3,3 +3,7 @@ variable "length"{
   type        = number
   
 }
+variable "application_name" {
+    description = "Integradora"
+    type        = string
+}
