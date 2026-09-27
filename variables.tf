@@ -44,3 +44,33 @@ variable "allowed_networks" {
 
   
 }
+variable "vnet_address_space" {
+    description = "Vnet address space"
+    type        = list(string)
+        
+}
+variable "location"{
+    description = "region de azxure"
+    type = string
+    default = "mexicocentral"
+}
+variable "project_name" {
+  description = "Nombre del proyecto"
+  type        = string
+}
+
+variable "environment" {
+  description = "Ambiente de despliegue (dev, staging, prod)"
+  type        = string
+}
+
+variable "vnet_address_space" {
+  description = "Espacio de direcciones de la red virtual"
+  type        = list(string)
+}
+
+variable "tags" {
+  description = "Etiquetas comunes para los recursos"
+  type        = map(string)
+  default     = {}
+}

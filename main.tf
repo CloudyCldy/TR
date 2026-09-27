@@ -13,6 +13,3 @@ resource "random_string" "sufix" {
   length  = var.length
   special = true
 }
-locals {
-  unique_name = "${var.application_name}-${random_string.sufix.result}"
-}
